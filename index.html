@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Copy</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" type="x-icon" href="img/tesla-small-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/tesla-logo.png" alt="">
+        </a>
+        <div class="navbar">
+            <a class="nav-opt">Vehicles</a>
+            <a class="nav-opt2">Energy</a>
+            <a class="nav-opt3">Charging</a>
+            <a class="nav-opt4">Discover</a>
+            <a class="nav-opt5">Shop</a>
+            <a class="nav-opt6">Support</a>
+        </div>
+
+        <div class="header-icons">
+            <i class="fa-regular fa-circle-question"></i>
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-regular fa-circle-user"></i>
+        </div>
+        <span id="bar">Menu</span>
+    </header>
+
+    <div class="navbar2">
+        <a onclick="addClass('div1', 'active')" class="collap-opt">Vehicles <i class="fa-solid fa-angle-right"></i></a>
+        <a onclick="addClass('div2', 'active')" class="collap-opt">Energy <i class="fa-solid fa-angle-right"></i></a>
+        <a onclick="addClass('div3', 'active')" class="collap-opt">Charging <i class="fa-solid fa-angle-right"></i></a>
+        <a onclick="addClass('div4', 'active')" class="collap-opt">Discover <i class="fa-solid fa-angle-right"></i></a>
+        <a class="">Shop</a>
+        <a class="">Support</a>
+        <span id="close"><i class="fa-solid fa-xmark"></i></span>
+        <div class="collap">
+            <i class="fa-solid fa-globe"></i>
+            <span>
+                <h2>United States</h2>
+                <p>English</p>
+            </span>
+        </div>
+        <div class="collap account">
+            <i class="fa-regular fa-circle-user"></i>
+            <h3>Account</h3>
+        </div>
+    </div>
+
+
+    <div id="div1" class="vehicles-collap content">
+        <div class="collap-bar">
+            <span onclick="backArrow('div1')" id="arrow"><i class="fa-solid fa-chevron-left"></i></span>
+
+            <h2>Vehicles</h2>
+
+            <span onclick="closeArrow('div1')" id="close-bar"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="vehicle">
+            <div>
+                <img src="img/model_S.png" alt="">
+                
+                <div class="sbox">
+                    <h2>Model S</h2>
+                    <span>
+                    <p>Learn</p>
+                    <p>Order</p>
+                </span>
+                </div>
+                
+            </div>
+            <div>
+            <img src="img/model_3.png" alt="">
+            <div class="sbox">
+                <h2>Model 3</h2>
+            <span>
+                <p>Learn</p>
+                <p>Order</p>
+            </span>
+            </div>
+            
+        </div>
+        <div>
+        <img src="img/model_X.png" alt="">
+        <div class="sbox">
+            <h2>Model X</h2>
+        <span>
+            <p>Learn</p>
+            <p>Order</p>
+        </span>
+        </div>
+        
+    </div>
+    <div>
+    <img src="img/model_Y.png" alt="">
+    <div class="sbox">
+        <h2>Model Y</h2>
+    <span>
+        <p>Learn</p>
+        <p>Order</p>
+    </span>
+    </div>
+    
+</div>
+<div>
+<img src="img/cybertruck.png" alt="">
+<div class="sbox">
+  <h2>Cybertruck</h2>
+<span>
+    <p>Learn</p>
+    <p>Order</p>
+</span>  
+</div>
+
+</div>
+<div>
+<img src="img/car-help.png" alt="">
+<div class="sbox">
+    <h2>Help Me Choose</h2>
+<span>
+    <p>Get Started</p>
+</span>
+</div>
+
+</div>
+        </div>
+
+        <div class="vehicle-links">
+            <h2>Inventory</h2>
+            <h2>Used Cars</h2>
+            <h2>Demo Drive</h2>
+            <h2>Trade-in</h2>
+            <h2>Compare</h2>
+            <h2>Help Me Change</h2>
+            <h2>Fleet</h2>
+            <h2>Semi</h2>
+            <h2>Roadster</h2>
+        </div>
+    </div>
+    <div id="div2" class="energy-collap content">
+        <div class="collap-bar">
+            <span onclick="backArrow('div2')" id="arrow"><i class="fa-solid fa-chevron-left"></i></span>
+
+            <h2>Energy</h2>
+
+            <span onclick="closeArrow('div2')" id="close-bar"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="energy-img">
+            <div class="box">
+              <img src="img/solar-panel.png" alt="">  
+              <div class="sbox">
+                <h2>Solar Panels</h2>
+              <span>
+                <p>Learn</p>
+                <p>Order</p>
+              </span>
+              </div>
+              
+            </div>
+            <div class="box">
+                <img src="img/solar-panel2.png" alt="">  
+                <div class="sbox">
+                    <h2>Solar Roof</h2>
+                <span>
+                  <p>Learn</p>
+                  <p>Order</p>
+                </span>
+                </div>
+                
+              </div>
+              <div class="box">
+                <img src="img/solar-panel3.png" alt="">  
+                <div class="sbox">
+                    <h2>Powerwall</h2>
+                <span>
+                  <p>Learn</p>
+                  <p>Order</p>
+                </span>
+                </div>
+                
+              </div>
+              <div class="box">
+                <img src="img/solar-panel4.png" alt="">  
+                <div class="sbox">
+                   <h2>Megapack</h2>
+                <span>
+                  <p>Learn</p>
+                  <p>Order</p>
+                </span> 
+                </div>
+                
+              </div>
+        </div>
+
+
+        <div class="energy-text">
+            <p>Schedule a Consultation</p>
+            <p>Why Solar?</p>
+            <p>Incentives</p>
+            <p>Support</p>
+            <p>Partner with Tesla</p>
+            <p>Commercial</p>
+            <p>Utilities</p>
+        </div>
+
+    </div>
+    <div id="div3" class="charger-collap content">
+        <div class="collap-bar">
+            <span onclick="backArrow('div3')" id="arrow"><i class="fa-solid fa-chevron-left"></i></span>
+
+            <h2>Charging</h2>
+
+            <span onclick="closeArrow('div3')" id="close-bar"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="charger-img">
+            <div>
+                <img src="img/tesla-charger3.png" alt="">
+                <div class="sbox">
+                    <h2>Charging</h2>
+                <span>
+                    <p>Learn</p>
+                </span>
+                </div>
+                
+            </div>
+
+            <div>
+                <img src="img/tesla-charger2.png" alt="">
+                <div class="sbox">
+                    <h2>Home Charging</h2>
+                <span>
+                    <p>Learn</p>
+                    <p>Shop</p>
+                </span>
+                </div>
+                
+            </div>
+
+            <div>
+                <img src="img/tesla-charger.png" alt="">
+                <div class="sbox">
+                    <h2>Supercharging</h2>
+                <span>
+                    <p>Learn</p>
+                    <p>Find</p>
+                </span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="charger-text">
+            <p>Help Me Charge</p>
+            <p>Charging Calculator</p>
+            <p>Charging With NACS</p>
+            <p>Supercharger voting</p>
+            <p>Host a Supercharger</p>
+            <p>Commercial Charging</p>
+            <p>Host Wall Connectors</p>
+        </div>
+    </div>
+    <div id="div4" class="discover-collap content">
+        <div class="collap-bar">
+            <span onclick="backArrow('div4')" id="arrow"><i class="fa-solid fa-chevron-left"></i></span>
+
+            <h2>Discover</h2>
+
+            <span onclick="closeArrow('div4')" id="close-bar"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="box">
+           <div class="discover-box">
+            <h2 >Resources</h2>
+            <p>Demo Drive</p>
+            <p>Insurance</p>
+            <p>Video Guides</p>
+            <p>Customer Stories</p>
+            <p>Events</p>
+        </div>
+        <div class="discover-box">
+            <h2>Location Services</h2>
+            <p>Find Us</p>
+            <p>Find a collision center</p>
+            <p>Find a Certified Installer</p>
+        </div>
+        <div class="discover-box">
+            <h2>Company</h2>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+        </div>  
+        </div>
+        
+    </div>
+
+
+
+    <div class="vehicles">
+        <div class="vehicle">
+            <div>
+                <img src="img/model_S.png" alt="">
+                <h2>Model S</h2>
+                <span>
+                    <p>Learn</p>
+                    <p>Order</p>
+                </span>
+            </div>
+            <div>
+            <img src="img/model_3.png" alt="">
+            <h2>Model 3</h2>
+            <span>
+                <p>Learn</p>
+                <p>Order</p>
+            </span>
+        </div>
+        <div>
+        <img src="img/model_X.png" alt="">
+        <h2>Model X</h2>
+        <span>
+            <p>Learn</p>
+            <p>Order</p>
+        </span>
+    </div>
+    <div>
+    <img src="img/model_Y.png" alt="">
+    <h2>Model Y</h2>
+    <span>
+        <p>Learn</p>
+        <p>Order</p>
+    </span>
+</div>
+<div>
+<img src="img/cybertruck.png" alt="">
+<h2>Model Cybertruck</h2>
+<span>
+    <p>Learn</p>
+    <p>Order</p>
+</span>
+</div>
+<div>
+<img src="img/car-help.png" alt="">
+<h2>Help Me Choose</h2>
+<span>
+    <p>Get Started</p>
+</span>
+</div>
+        </div>
+
+        <div class="vehicle-links">
+            <h2>Inventory</h2>
+            <h2>Used Cars</h2>
+            <h2>Demo Drive</h2>
+            <h2>Trade-in</h2>
+            <h2>Compare</h2>
+            <h2>Help Me Change</h2>
+            <h2>Fleet</h2>
+            <h2>Semi</h2>
+            <h2>Roadster</h2>
+        </div>
+    </div>
+    <div class="energy">
+        <div class="energy-img">
+            <div class="box">
+              <img src="img/solar-panel.png" alt="">  
+              <h2>Solar Panels</h2>
+              <span>
+                <p>Learn</p>
+                <p>Order</p>
+              </span>
+            </div>
+            <div class="box">
+                <img src="img/solar-panel2.png" alt="">  
+                <h2>Solar Panels</h2>
+                <span>
+                  <p>Learn</p>
+                  <p>Order</p>
+                </span>
+              </div>
+              <div class="box">
+                <img src="img/solar-panel3.png" alt="">  
+                <h2>Solar Panels</h2>
+                <span>
+                  <p>Learn</p>
+                  <p>Order</p>
+                </span>
+              </div>
+              <div class="box">
+                <img src="img/solar-panel4.png" alt="">  
+                <h2>Solar Panels</h2>
+                <span>
+                  <p>Learn</p>
+                  <p>Order</p>
+                </span>
+              </div>
+        </div>
+
+
+        <div class="energy-text">
+            <p>Schedule a Consultation</p>
+            <p>Why Solar?</p>
+            <p>Incentives</p>
+            <p>Support</p>
+            <p>Partner with Tesla</p>
+            <p>Commercial</p>
+            <p>Utilities</p>
+        </div>
+
+    </div>
+    <div class="charger">
+        <div class="charger-img">
+            <div>
+                <img src="img/tesla-charger3.png" alt="">
+                <h2>Charging</h2>
+                <span>
+                    <p>Learn</p>
+                </span>
+            </div>
+
+            <div>
+                <img src="img/tesla-charger2.png" alt="">
+                <h2>Home Charging</h2>
+                <span>
+                    <p>Learn</p>
+                    <p>Shop</p>
+                </span>
+            </div>
+
+            <div>
+                <img src="img/tesla-charger.png" alt="">
+                <h2>Supercharging</h2>
+                <span>
+                    <p>Learn</p>
+                    <p>Find</p>
+                </span>
+            </div>
+        </div>
+        <div class="charger-text">
+            <p>Help Me Charge</p>
+            <p>Charging Calculator</p>
+            <p>Charging With NACS</p>
+            <p>Supercharger voting</p>
+            <p>Host a Supercharger</p>
+            <p>Commercial Charging</p>
+            <p>Host Wall Connectors</p>
+        </div>
+    </div>
+    <div class="discover">
+        <div class="box">
+           <div class="discover-box">
+            <h2>Resources</h2>
+            <p>Demo Drive</p>
+            <p>Insurance</p>
+            <p>Video Guides</p>
+            <p>Customer Stories</p>
+            <p>Events</p>
+        </div>
+        <div class="discover-box">
+            <h2>Location Services</h2>
+            <p>Find Us</p>
+            <p>Find a collision center</p>
+            <p>Find a Certified Installer</p>
+        </div>
+        <div class="discover-box">
+            <h2>Company</h2>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+        </div>  
+        </div>
+        
+    </div>
+    <div class="shop">
+        <div class="shop-box">
+            <img src="img/shop1.png">
+            <h2>Charging</h2>
+        </div>
+        <div class="shop-box">
+            <img src="img/shop2.png">
+            <h2>Vehicle Accesories</h2>
+        </div>
+        <div class="shop-box">
+            <img src="img/shop3.png">
+            <h2>Apparel</h2>
+        </div>
+        <div class="shop-box">
+            <img src="img/shop4.png">
+            <h2>Lifestyle</h2>
+        </div>
+    </div>
+
+<div class="container model3">
+        <div class="container-text">
+            <h1>Model 3</h1>
+            <h2>From $33,990²</h2>
+            <h3>After Est. Savings</h3>
+        </div>
+        
+
+        <div class="container-buttons">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+        </div>
+        <img class="collap-img" src="img/model3-collap.JPG" alt="">
+    </div>
+
+    <div class="container">
+        <div class="container-text">
+            <h1>Model Y</h1>
+            <h2>From $31,4902</h2>
+            <h3>After Est. Savings</h3>
+        </div>
+        
+
+        <div class="container-buttons">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+        </div>
+    </div>
+    
+    <div class="container modelX">
+        <div class="container-text">
+            <h1>Model X</h1>
+            <h2>From $63,990³</h2>
+            <h3>After Est. Savings</h3>
+        </div>
+        
+
+        <div class="container-buttons">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+        </div>
+    </div>
+    <div class="container modelS">
+        <div class="container-text">
+            <h1>Model S</h1>
+            <h2>From $66,490⁴</h2>
+            <h3>After Est. Savings</h3>
+        </div>
+        
+
+        <div class="container-buttons">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+        </div>
+    </div>
+    <div class="container cybertruck">
+        <img src="img/cybertruck-font.png">
+        
+
+        <div class="container-buttons">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+        </div>
+    </div>
+    <div class="container solar">
+        <div class="container-text">
+            <h1>Solar Panels</h1>
+            <a href="">Schedule a Virtual Consultation</a>
+        </div>
+        
+
+        <div class="container-buttons">
+            <button>Order Now</button>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="container solarroof">
+        <div class="container-text">
+            <h1>Solar Roof</h1>
+            <h5>Produce Clean Energy From Your Roof</h5>
+        </div>
+        
+
+        <div class="container-buttons">
+            <button>Order Now</button>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="container powerwall">
+        <div class="container-text">
+            <h1>Powerwall</h1>
+        </div>
+        
+
+        <div class="container-buttons">
+            <button>Order Now</button>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="container accessories">
+        <div class="container-text">
+            <h1>Accessories</h1>
+        </div>
+        
+
+        <div class="container-buttons">
+            <button>Shop Now</button>
+        </div>
+    </div>
+    <footer>
+            <h2>
+                ¹ Excludes taxes and fees with price subject to change. Available in select states and requires credit approval. <span>Est. gas savings</span> is $100/month.
+            </h2>
+            <a href="">See Details</a>
+            <h2>² Price before estimated savings is $38,990, excluding taxes and fees. Subject to change.</h2>
+            <a href="">Learn about est. gas savings.</a>
+            <h2>³ Price before estimated savings is $77,990, excluding taxes and fees. Subject to change.</h2>
+            <a href="">Learn about est. gas savings.</a>
+            <h2>⁴ Price before estimated savings is $72,990, excluding taxes and fees. Subject to change.</h2>
+            <a href="">Learn about est. gas savings.</a>
+            <div class="footer-box">
+                <p>Tesla © 2024</p>
+                <p>Privacy & Legal</p>
+                <p>Vehicle Recalls</p>
+                <p>Contact</p>
+                <p>News</p>
+                <p>Get Updates</p>
+                <p>Locations</p>
+            </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/5111c4ecb9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

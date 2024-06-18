@@ -1,0 +1,1581 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #171a20;
+}
+header {
+    width: 100%;
+    padding: 0 32px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    padding-top: 0px;
+    z-index: 950;
+    transition: 1s ease;
+}
+#bar {
+    display: none;
+}
+#close {
+    display: none;
+}
+.navbar2 {
+    display: none;
+}
+header .navbar {
+    display: flex;  
+}
+header .navbar .nav-opt6 {
+    display: none;
+}
+header .navbar .collap {
+    display: none;
+}
+header .navbar a{
+    padding: 8px 17px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s ease;
+    margin: 0 3px;
+    border-radius: 6px;
+    letter-spacing: 0.7px;
+    font-family: "Roboto Flex", sans-serif;
+    cursor: pointer;
+}
+header .navbar a:hover {
+    background-color: #0000000D;
+}
+.nav-opt.active {
+    background-color: #0000000D;
+}
+
+header .header-icons i {
+    font-size: 20px;
+    margin-right: 17px;
+    cursor: pointer;
+}
+header .header-icons i:nth-child(3) {
+    margin-right: 10px;
+}
+.nav-opt2.active {
+    background-color: #0000000D;
+}
+.nav-opt3.active {
+    background-color: #0000000D;
+}
+.nav-opt4.active {
+    background-color: #0000000D;
+}
+.nav-opt5.active {
+    background-color: #0000000D;
+}
+.vehicles-collap {
+    display: none;
+}
+.energy-collap {
+    display: none;
+}
+.collap-img {
+    display: none; 
+}
+.charger-collap {
+    display: none;
+}
+.discover-collap {
+    display: none;
+}
+.shop {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 330px;
+    background-color: #fff;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.7%;
+    transition: 1.5s ease;
+}
+.shop .shop-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 15px;
+    position: relative;
+}
+.shop .shop-box img {
+    width: 225px;
+    z-index: 999;  
+}
+.shop .shop-box h2 {
+    font-size: 18px;
+    font-family: "Roboto Flex", sans-serif;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: .3s ease;
+    max-width: fit-content;
+    position: relative;
+}
+.shop .shop-box h2:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -4px;
+    left: 0;
+    height: 2.4px;
+    background-color: #171a20;
+    border-radius: 4px;
+}
+.discover {
+    position: absolute;
+    top: -420px;
+    width: 100%;
+    height: 420px;
+    background-color: #fff;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    transition: 1.5s ease;
+}
+.discover .box {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+}
+.discover .discover-box {
+    display: flex;
+    flex-direction: column;
+}
+.discover .discover-box:nth-child(2) {
+    margin-left: 110px;
+    margin-right: 100px;
+}
+.discover .discover-box h2 {
+    font-size: 17px;
+    color: #5c5e62;
+    margin-bottom: 19px;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+.discover .discover-box p {
+    font-size: 15px;
+    margin-bottom: 11px;
+    font-weight: 600;
+    font-family: "Roboto Flex", sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    transition: .3s ease;
+    position: relative;
+    max-width: fit-content;
+    letter-spacing: 0.6px;
+}
+.discover .discover-box p:hover::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    bottom: -3px;
+    left: 0;
+    height: 2.2px;
+    background-color: #171a20;
+    border-radius: 3px;
+}
+.charger {
+    position: absolute;
+    top: -410px;
+    width: 100%;
+    height: 410px;
+    background-color: #fff;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    transition: 1.5s ease;
+}
+.charger .charger-img {
+    display: grid; 
+    grid-template-columns: 230px 230px 230px;
+    margin-left: -3%;
+}
+.charger .charger-img div img {
+    width: 220px;
+}
+.charger .charger-img div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.charger .charger-img div h2 {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 10px;
+}
+.charger .charger-img div span {
+    display: flex;
+    margin-top: 3px;
+}
+.charger .charger-img div p {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+    color: #5c5e62;
+}
+.charger .charger-img div p:nth-child(2) {
+    margin-left: 16px;
+}
+.charger .charger-text {
+    margin-left: 50px;
+    padding-left: 4%;
+    border-left: 1px solid #dfdfdf;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.charger .charger-text p {
+    font-size: 15px;
+    color: #171a20;
+    margin-bottom: 12px;
+    font-family: "Roboto Flex", sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    position: relative;
+    max-width: fit-content;
+    transition: .3s ease;
+}
+.charger .charger-text p:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.2px;
+    bottom: -3px;
+    left: 0;
+    background: #171a20;
+    border-radius: 3px;
+}
+.energy {
+    position: absolute;
+    top: -410px;
+    width: 100%;
+    height: 410px;
+    background-color: #fff;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;  
+    transition: 1.5s ease;
+}
+.energy .energy-img {
+    display: grid; 
+    grid-template-columns: 250px 250px 250px 250px;
+    margin-left: -3%;
+}
+.energy .energy-img .box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.energy .energy-img .box h2 {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 3px;
+}
+.energy .energy-img .box span {
+    display: flex;
+    margin-top: 3px;
+}
+.energy .energy-img .box span p {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+    color: #5c5e62;
+}
+.energy .energy-img .box span p:nth-child(1) {
+    margin-right: 16px;
+}
+.energy .energy-img .box img {
+    width: 220px;
+}
+.energy .energy-text {
+    margin-left: 50px;
+    padding-left: 4%;
+    border-left: 1px solid #a2a3a5;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.energy .energy-text p {
+    font-size: 15px;
+    color: #171a20;
+    margin-bottom: 13px;
+    font-family: "Roboto Flex", sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: .4s ease;
+    position: relative;
+    max-width: fit-content;
+}
+.energy .energy-text p:hover::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 2.2px;
+    bottom: -3px;
+    left: 0;
+    background: #171a20;
+    border-radius: 3px;
+}
+.vehicles {
+    position: absolute;
+    top: -530px;
+    width: 100%;
+    height: 530px;
+    background-color: #fff;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    transition: 1.5s ease;
+}
+.vehicles .box {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    opacity: .5;
+    position: absolute;
+    bottom: 0;
+}
+.vehicles .vehicle {
+    display: grid; 
+    grid-template-columns: 260px 260px 260px 260px;
+    grid-template-rows: 185px 185px;
+    margin-left: -3.5%;
+}
+.vehicles .vehicle img {
+    width: 220px;
+}
+.vehicles .vehicle div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vehicles .vehicle div h2 {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto Flex", sans-serif;
+}
+.vehicles .vehicle div span {
+    display: flex;
+    margin-top: 5px;
+}
+.vehicles .vehicle div span p {
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 550;
+    color: #5c5e62;
+    font-family: "Roboto Flex", sans-serif;
+    letter-spacing: 0.4px;
+}
+.vehicles .vehicle div span p:nth-child(1) {
+    margin-right: 16px;
+}
+.vehicles .vehicle-links {
+    margin-left: 50px;
+    padding-left: 4%;
+    border-left: 1.5px solid #a2a3a5;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+.vehicles .vehicle-links h2 {
+    font-size: 15px;
+    color: #171a20;
+    margin-bottom: 13px;
+    font-family: "Roboto Flex", sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: .4s ease;
+    max-width: fit-content;
+    position: relative;
+}
+.vehicles .vehicle-links h2:hover::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 2.5px;
+    bottom: -3px;
+    left: 0;
+    background: #171a20;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(img/ModelY_homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container.model3 {
+    background: url(img/model3.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.container.modelX {
+    background: url(img/ModelX_homepage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container.modelS {
+    background: url(img/ModelS_homepage.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.container.cybertruck {
+    background: url(img/Cybertruck_homepage.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.container.solar {
+    background: url(img/SolarPanels_homepage.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.container.solarroof {
+    background: url(img/SolarRoof_homepage.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.container.powerwall {
+    background: url(img/Powerwall3_homepage.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.container.accessories {
+    background: url(img/WallConnector_homepage2.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.container.cybertruck img { 
+    position: absolute;
+    top: 11%;
+}
+.container.cybertruck .container-buttons button {
+    background-color: #111111;
+    color: #a2a3a5;
+    border-radius: 2px;
+    font-size: 15px;
+    height: 45px;
+    border-top: 3px solid #a2a3a5;
+}
+.container.cybertruck .container-buttons button:hover {
+    background-color: #1111119c;
+}
+.container.cybertruck .container-buttons button:nth-child(2) {
+    background-color: #1111119c;
+}
+.container.cybertruck .container-buttons button:nth-child(2) {
+    background-color: #111111;
+    color: #a2a3a5;
+    border: 1.2px solid #a2a3a5;
+}
+.container.modelS h1,
+.container.modelS h2,
+.container.modelS h3 {
+    color: #fff;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+.container .container-text {
+    top: 17%;
+    position: absolute;
+    text-align: center;
+}
+.container .container-text a {
+    font-weight: 700;
+    margin-top: 1000px;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+}
+.container .container-text h1 {
+    font-size: 43px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 2.3px;
+}
+.container .container-text h5 {
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "Roboto Flex", sans-serif;
+}
+.container .container-text h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 6px;
+    letter-spacing: 2px;
+}
+.container .container-text h2 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.container .container-text h3 {
+    font-size: 10.2px;
+    letter-spacing: 1.3px;
+}
+.container .container-text h4 span {
+    text-decoration: underline;
+}
+.container .container-text h4 span .percent {
+    font-weight: 600;
+}
+.container .container-text p {
+    font-size: 17px;
+    margin-top: 15px;
+    font-weight: 300;
+}
+.container .container-text p span {
+    font-weight: 500;
+}
+.container .container-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 12%;
+}
+.container .container-buttons button {
+    font-size: 15px;
+    font-weight: 600;
+    width: 264px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: "Roboto Flex", sans-serif;
+    transition: .4s ease;
+}
+.container .container-buttons button:hover {
+    background-color: #ffffffdd;
+}
+.container .container-buttons button:nth-child(2):hover {
+    background-color: #222222e2;
+}
+.container .container-buttons button:nth-child(2) {
+    background-color: #222222;
+    color: #fff;
+    margin-left: 25px;
+}
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    padding: 4% 15px 2%;
+}
+footer h2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #eeeeee;
+    letter-spacing: 1.2px;
+    max-width: 600;
+    max-width: 684px;
+    line-height: 17px;
+}
+footer a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #eeeeee;
+    letter-spacing: 1.2px;
+    margin-bottom: 17px;
+    margin-top: 4px;
+}
+footer h2 span {
+    text-decoration: underline;
+    color: #eeeeee;
+}
+footer .footer-box {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+footer .footer-box p {
+    font-size: 1px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    color: #d0d2d1;
+}
+@media (max-width: 1440px) {
+    .vehicles .vehicle {
+    display: grid; 
+    grid-template-columns: 260px 260px 260px;
+    grid-template-rows: 185px 185px;
+    margin-left: -4%;
+}
+.energy {
+    height: 550px;
+    top: -550px;
+    align-items: start;
+    justify-content: center;
+}
+.energy .energy-img {
+    display: grid; 
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 195px 195px;
+    margin-left: -3%;
+    padding-top: 6%;
+}
+.energy .energy-text {
+    margin-top: 7.4%;
+}
+
+}
+@media (max-width: 1200px) {
+    .vehicles {
+        display: none;
+    }
+    .energy {
+        display: none;
+    }
+    .charger {
+        display: none;
+    }
+    .discover {
+        display: none;
+    }
+    header {
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+    header .navbar {
+        display: none;
+    }
+    header .header-icons {
+        display: none;
+    }
+    #bar {
+        padding: 7px 18px;
+        background-color: #0000000D;
+        font-size: 15px;
+        display: block;
+        border-radius: 3px;
+        font-weight: 600;
+        font-family: "Roboto Flex", sans-serif;
+        cursor: pointer;
+    }
+    .navbar2 {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        right: 0;
+        top: 0;
+        padding-top: 64px;
+        padding-left: 26px;
+        padding-right: 22px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 999;
+    }
+    .navbar2.active {
+        display: flex;
+    }
+    #close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 3px;
+        padding: 4px;
+        transition: .4s ease;
+        top: 16px;
+        right: 10px;
+        position: absolute;
+        cursor: pointer;
+    }
+    #close:hover {
+        background-color: #0000000D;
+    }
+    .navbar2 a {
+        font-size: 18px;
+        font-weight: 650;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 16px 12px;
+        margin-bottom: 17px;
+        max-width: max-content;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 4px;
+    }
+    .navbar2 a i {
+        display: none;
+    }
+    .navbar2 a:hover {
+        background-color: #0000000D;
+    }
+    .navbar2 a:nth-child(1) {
+        margin-top: 15px;
+    }
+    .navbar2 a:nth-child(6) {
+        display: block;
+    }
+    .navbar2 .collap {
+        display: flex;
+        padding: 10px;
+        font-family: "Roboto Flex", sans-serif;
+        cursor: pointer;
+        max-width: max-content;
+        transition: .3s ease;
+        border-radius: 4px;
+    }
+    .navbar2:nth-child(2) .collap {
+        margin-top: 17px;
+    }
+    .navbar2 .collap:hover {
+        background-color: #0000000D;
+    }
+    .navbar2 .collap i {
+        font-size: 22px;
+        margin-top: 0px;
+    }
+    .navbar2 .collap.account {
+        margin-top: 30px;
+    }
+    .navbar2 .collap span {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .navbar2 .collap span h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .navbar2 .collap span p {
+        font-size: 14px;
+        font-weight: 300;
+        color: #5c5e62;
+        margin-top: 5px;
+    }
+    .navbar2 .collap h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 15px;
+    }
+    .vehicles-collap {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1001;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7%;
+        transition: 2s ease;
+        padding-left: 28px;
+        padding-right: 28px;
+        overflow-y:scroll;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    #arrow {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        padding: 4px;
+        transition: .4s ease;
+    }
+    #arrow:hover {
+        background-color: #0000000D;
+    }
+    #close-bar {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        padding: 4px;
+        transition: .4s ease;
+    }
+    #close-bar:hover {
+        background-color: #0000000D;
+    }
+    .vehicles-collap .vehicle {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 26% 26% 26% 26%;
+        grid-template-rows: 200px 200px;
+        margin-left: -3%;
+        padding-bottom: 50px;
+    }
+    .vehicles-collap .vehicle img {
+        width: 220px;
+    }
+    .vehicles-collap .vehicle div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .vehicles-collap .vehicle div h2 {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        font-family: "Roboto Flex", sans-serif;
+    }
+    .vehicles-collap .vehicle div span {
+        display: flex;
+        margin-top: 5px;
+    }
+    .vehicles-collap .vehicle div span p {
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 550;
+        color: #5c5e62;
+        font-family: "Roboto Flex", sans-serif;
+        letter-spacing: 0.4px;
+    }
+    .vehicles-collap .vehicle div span p:nth-child(1) {
+        margin-right: 16px;
+    }
+    .vehicles-collap .vehicle-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10px;
+        position: relative;
+    }
+    .vehicles-collap .vehicle-links::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        height: 2.6px;
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+    .vehicles-collap .vehicle-links h2 {
+        font-size: 18px;
+        font-weight: 650;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 4px 0px;
+        margin-bottom: 30px;
+        max-width: max-content;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 4px;
+        position: relative;
+    }
+    .vehicles-collap .vehicle-links h2:hover::before {
+        content: "";
+        position: absolute;
+        width: 86%;
+        height: 2px;
+        bottom: -2.3px;
+        left: 0px;
+        background: #171a20;
+    }
+    .collap-bar {
+        width: 100%;
+        top: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 26px;
+    }
+    .collap-bar h2 {
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        font-family: "Roboto Flex", sans-serif;
+    }
+    .energy-collap {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1001;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8%;
+        transition: 2s ease;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .energy-collap .energy-img {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 25.2% 25.2% 25.2% 25.2%;
+        margin-left: -1%;
+        padding-bottom: 50px;
+    }
+    .energy-collap .energy-img .box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .energy-collap .energy-img .box h2 {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        font-family: "Roboto Flex", sans-serif;
+        margin-top: 5px;
+    }
+    .energy-collap .energy-img .box span {
+        display: flex;
+        margin-top: 9px;
+    }
+    .energy-collap .energy-img .box span p {
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 500;
+        color: #5c5e62;
+    }
+    .energy-collap .energy-img .box span p:nth-child(1) {
+        margin-right: 16px;
+    }
+    .energy-collap .energy-img .box img {
+        width: 220px;
+    }
+    .energy-collap .energy-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 15px;
+        position: relative;
+    }
+    .energy-collap .energy-text::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        height: 2.2px;
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+    .energy-collap .energy-text p {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 4px 0px;
+        margin-bottom: 30px;
+        max-width: max-content;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 4px;
+        position: relative;
+    }
+    .energy-collap .energy-text p:hover::before {
+        content: "";
+        position: absolute;
+        width: 86%;
+        height: 2px;
+        bottom: -2.3px;
+        left: 0px;
+        background: #171a20;
+        border-radius: 5px;
+    }
+    .charger-collap {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1001;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 9%;
+        transition: 2s ease;
+        padding-left: 28px;
+        padding-right: 28px;
+
+    }
+    .charger-collap .charger-img {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 25.2% 25.2% 25.2%;
+        margin-left: -1%;
+        padding-bottom: 50px;
+    }
+    .charger-collap .charger-img div img {
+        width: 220px;
+    }
+    .charger-collap .charger-img div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .charger-collap  .charger-img div h2 {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        font-family: "Roboto Flex", sans-serif;
+        margin-top: 10px;
+    }
+    .charger-collap .charger-img div span {
+        display: flex;
+        margin-top: 7px;
+    }
+    .charger-collap .charger-img div p {
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 500;
+        color: #5c5e62;
+    }
+    .charger-collap .charger-img div p:nth-child(2) {
+        margin-left: 16px;
+    }
+    .charger-collap .charger-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 15px;
+        position: relative;
+    }
+    .charger-collap .charger-text::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        height: 2.2px;
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+    .charger-collap .charger-text p {
+        font-size: 18px;
+        font-weight: 550;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 4px 0px;
+        margin-bottom: 30px;
+        max-width: max-content;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 4px;
+        position: relative;
+    }
+    .charger-collap .charger-text p:hover::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        background: #171a20;
+        border-radius: 3px;
+    }
+    .discover-collap {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1001;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8%;
+        transition: 2s ease;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .content.active {
+        display: flex;
+    }
+    .discover-collap .box {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: -1%;
+    }
+    .discover-collap .discover-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .discover-collap .discover-box:nth-child(2) {
+        margin-left: 0px;
+        margin-right:0px;
+    }
+    .discover-collap .discover-box h2 {
+        display: none;
+        position: relative;
+    }
+    .discover-collap .discover-box p {
+        font-size: 18px;
+        font-weight: 550;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 4px 0px;
+        margin-bottom: 32px;
+        max-width: max-content;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 4px;
+        position: relative;
+    }
+    .discover-collap .discover-box p:hover::before {
+        content: "";
+        position: absolute;
+        width: 90%;
+        bottom: -3px;
+        left: 0;
+        height: 2.2px;
+        background-color: #171a20;
+        border-radius: 3px;
+    }
+}
+@media (max-width: 950px){
+    .vehicles-collap .vehicle img {
+        width: 205px;
+    }
+    .energy-collap .energy-img .box img {
+        width: 205px;
+    }
+    .charger-collap .charger-img div img {
+        width: 205px;
+    }
+    .energy-collap {
+        overflow-y: auto;
+    }
+}
+@media (max-width: 900px) {
+    .navbar2 a {
+        font-size: 18px;
+        font-weight: 650;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 16px 12px;
+        margin-bottom: 17px;
+        min-width: 100%;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+    }
+    .navbar2 a i {
+        display: block;
+        font-size: 16px;
+    }
+    .vehicles-collap {
+        padding-top: 8.5%;
+    }
+    .vehicles-collap .vehicle {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 34% 34% 34%;
+        grid-template-rows: 200px 200px;
+        margin-left: -3%;
+        padding-bottom: 50px;
+    }
+    .vehicles-collap .vehicle img {
+        width: 215px;
+    }
+    .energy-collap .energy-img .box img {
+        width: 215px;
+    }
+    .energy-collap {
+        padding-top: 8.5%;
+    }
+    .energy-collap .energy-img {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 34% 34% 34%;
+        grid-template-rows: 210px;
+        margin-left: -1%;
+        padding-bottom: 50px;
+    }
+    .charger-collap {
+        padding-top: 11.5%;
+    }
+    .charger-collap .charger-img {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 33% 33% 33%;
+        margin-left: -1%;
+        padding-bottom: 50px;
+    }
+    .charger-collap .charger-img div img {
+        width: 215px;
+    }
+    .discover-collap {
+        padding-top: 15%;
+    }
+}
+@media (max-width: 750px) {
+    .vehicles-collap .vehicle {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 34% 34% 34%;
+        grid-template-rows: 180px 180px;
+        margin-left: -3%;
+        padding-bottom: 40px;
+    }
+    .vehicles-collap .vehicle img {
+        width: 92%;
+    }
+    .energy-collap .energy-img .box img {
+        width: 92%;
+    }
+    .charger-collap .charger-img div img {
+        width: 92%;
+    }
+}
+@media (max-width: 600px) {
+    .vehicles-collap {
+        padding-top: 14%;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .vehicles-collap .vehicle {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 180px 180px 180px;
+        margin-left: 1%;
+        padding-bottom: 40px;
+    }
+    .vehicles-collap .vehicle img {
+        width: 220px;
+    }
+    .energy-collap {
+        padding-top: 14%;
+    }
+    .energy-collap .energy-img {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 210px 210px;
+        margin-left: -1%;
+        padding-bottom: 50px;
+    }
+    .energy-collap .energy-img .box img {
+        width: 220px;
+    }
+    .charger-collap {
+        padding-top: 15%;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .charger-collap .charger-img {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 200px;
+        margin-left: -1%;
+        padding-bottom: 50px;
+    }
+    .charger-collap .charger-img div img {
+        width: 220px;
+    }
+    .container.model3 {
+        background: url(img/model3-collap.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        background: url(img/modelY-collap.JPG);
+        background-size: cover;
+        background-position: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container.modelX {
+        background: url(img/modelX-collap.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    .container.modelS {
+        background: url(img/modelS-collap.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    .container.cybertruck {
+        background: url(img/cybertruck-collap.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    .container.solar {
+        background: url(img/solar-panels-collap.JPG);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+    .container.solarroof {
+        background: url(img/solar-roof-collap.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    .container.powerwall {
+        background: url(img/powerwall-collap.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    .container.accessories {
+        background: url(img/accessories-collap.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    .container .container-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .container .container-buttons button {
+        min-width: 100%;
+    }
+    .container .container-buttons button:nth-child(2) {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .container .container-buttons button {
+        width: 100%;
+    }
+    .container img {
+        width: 350px;
+    }
+    .container.solar h1 {
+        color: #fff;
+    }
+    .container.solar a {
+        color: #fff;
+        margin-top: 15px;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #000;
+        padding: 7% 15px 4%;
+    }
+    footer .footer-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+}
+@media (max-width: 520px) {
+    .vehicles-collap .vehicle img {
+        width: 97%;
+    }
+    .energy-collap .energy-img .box img {
+        width: 97%;
+    }
+    .charger-collap .charger-img div img {
+        width: 97%;
+    }
+}
+@media (max-width: 450px) {
+    .vehicles-collap .vehicle {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 120px 120px 120px 120px 120px;
+        margin-left: -4%;
+        padding-bottom: 40px;
+    }
+    .vehicles-collap .vehicle div {
+        display: flex;
+        flex-direction: row;
+    }
+    .vehicles-collap .vehicle .sbox {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .vehicles-collap .vehicle .sbox h2 {
+        font-weight: 600;
+    }
+    .vehicles-collap .vehicle .sbox span {
+        margin-top: 10px;
+    }
+    .vehicles-collap .vehicle img {
+        width: 45%;
+        margin-right: 20px;
+    }
+    .vehicles-collap .vehicle div:nth-child(6) .sbox {
+        margin-right: -35px;
+    }
+    .discover-collap {
+        padding-top: 23%;
+    }
+    .energy-collap {
+        padding-top: 18%;
+    }
+    .energy-collap .energy-img {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 90%;
+        grid-template-rows: 120px 120px 120px 120px;
+        margin-left: -1%;
+        padding-bottom: 50px;
+    }
+    .energy-collap .energy-img .box img {
+        width: 47%;
+    }
+    .energy-collap .energy-img .box {
+        display: flex;
+        flex-direction: row;
+    }
+    .energy-collap .energy-img .box .sbox {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 20px;
+    }
+    .energy-collap .energy-img .box .sbox h2 {
+        font-weight: 600;
+    }
+    .charger-collap {
+        padding-top: 19%;
+    }
+    .charger-collap .charger-img {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 115px 115px 115px;
+        margin-left: -6%;
+        padding-bottom: 50px;
+    }
+    .charger-collap .charger-img div {
+        display: flex;
+        flex-direction: row;
+    }
+    .charger-collap .charger-img .sbox {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 15px;
+    }
+    .charger-collap .charger-img div img {
+        width: 45%;
+    }
+    .charger-collap .charger-img div:nth-child(1) img {
+        margin-left: -50px;
+    }
+    .charger-collap .charger-text {
+        padding-top: 10px;
+    }
+    .charger-collap .charger-text p {
+        font-size: 18px;
+        font-weight: 550;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 16px 5px;
+        margin-bottom: 14px;
+        max-width: max-content;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 6px;
+        position: inherit;
+        min-width: 100%;
+    }
+    .charger-collap .charger-text p:hover {
+        background-color: #0000000D;
+    }
+    .charger-collap .charger-text p:hover::before {
+        display: none;
+    }
+    .energy-collap .energy-text p {
+        font-size: 18px;
+        font-weight: 550;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 16px 5px;
+        margin-bottom: 14px;
+        max-width: max-content;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 6px;
+        position: inherit;
+        min-width: 100%;
+    }
+    .energy-collap .energy-text p:hover {
+        background-color: #0000000D;
+    }
+    .energy-collap .energy-text p:hover::before {
+        display: none;
+    }
+    .vehicles-collap .vehicle-links h2 {
+        font-size: 18px;
+        font-weight: 550;
+        font-family: "Roboto Flex", sans-serif;
+        padding: 16px 6px 16px 5px;
+        margin-bottom: 14px;
+        max-width: max-content;
+        cursor: pointer;
+        transition: .5s ease;
+        border-radius: 6px;
+        position: inherit;
+        min-width: 100%;
+    }
+    .vehicles-collap .vehicle-links h2:hover {
+        background-color: #0000000D;
+    }
+    .vehicles-collap .vehicle-links h2:hover::before {
+        display: none;
+    }
+}
